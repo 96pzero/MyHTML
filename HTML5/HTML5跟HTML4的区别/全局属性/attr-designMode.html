@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局属性-designMode</title>
+</head>
+<body>
+	<h2>全文可编辑状态</h2>
+<pre>
+designMode属性用来指定整个页面是否可编辑，当页面可编辑时，页面中任何支持上文所述的contentEditable属性的元素都变成了可编辑状态。
+designMode属性只能在JavaScript脚本里被编辑修改。该属性有两个值—“on”与“off”。
+属性被指定为“on”时，页面可编辑；被指定为“off”时，页面不可编辑。
+使用JavaScript脚本来指定designMode属性的方法如下所示：document.designMode="on";
+</pre>
+<br>
+<pre>
+针对designMode属性，各浏览器的支持情况也各不相同：
+IE8：出于安全考虑，不允许使用designMode属性让页面进入编辑状态。
+IE9：允许使用designMode属性让页面进入编辑状态。
+Chrome 3和Safari：使用内嵌frame的方式,该内嵌frame是可编辑的。
+Firefox和Opera：允许使用designMode属性让页面进入编辑状态。
+</pre>
+
+	<script>
+		document.designMode = "on";
+	</script>
+</body>
+</html>
